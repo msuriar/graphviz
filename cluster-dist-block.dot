@@ -1,0 +1,59 @@
+graph G {
+  ranksep = 1.0
+  nodesep = 1.0
+  subgraph cluster_dist1 {
+      SD1
+      SD2
+      SA1
+      SA2
+      SA3
+      SA4
+      SD1 -- SD2
+      SA1 -- SA2
+      SD1 -- SA1
+      SD2 -- SA2
+      SD1 -- SA2
+      SD2 -- SA1
+      // Comment
+      SA3 -- SA4
+      SD1 -- SA3
+      SD2 -- SA4
+      SD1 -- SA4
+      SD2 -- SA3
+      { rank = same; SD1 SD2 }
+      { rank = same; SA1 SA2 SA3 SA4 }
+  }
+
+  subgraph cluster_dist2 {
+      SD3
+      SD4
+      SA5
+      SA6
+      SA7
+      SA8
+      SD3 -- SD4
+      SD3 -- SA5
+      SD4 -- SA6
+      SD3 -- SA6
+      SD4 -- SA5
+      // Comment
+      SD3 -- SA7
+      SD4 -- SA8
+      SD3 -- SA8
+      SD4 -- SA7
+      subgraph { rank = same; SD3 SD4 }
+      { rank = same; SA5 SA6 SA7 SA8 }
+  }
+
+  { rank = same; CR1 CR2 }
+
+  CR1 -- CR2
+  CR1 -- SD1
+  CR1 -- SD2
+  CR1 -- SD3
+  CR1 -- SD4
+  CR2 -- SD1
+  CR2 -- SD2
+  CR2 -- SD3
+  CR2 -- SD4
+}
