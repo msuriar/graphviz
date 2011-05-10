@@ -1,0 +1,3 @@
+### Graphviz
+
+Need a good way to store and visualise network diagrams, that isn't a binary format dependent on a particular vendor's software. Let's see how this graphviz thing works out.
