@@ -1,0 +1,16 @@
+graph G {
+  ranksep = 1.0
+  nodesep = 1.0
+  SD1
+  SD2
+  SA1
+  SA2
+  SD1 -- SD2
+  SA1 -- SA2
+  SD1 -- SA1
+  SD2 -- SA2
+  SD1 -- SA2
+  SD2 -- SA1
+  { rank = same; SD1 SD2 }
+  { rank = same; SA1 SA2 }
+}
