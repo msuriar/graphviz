@@ -1,0 +1,6 @@
+graph G {
+  r1 [ label="R1"]
+  r2 []
+
+  r1 -- r2
+}
