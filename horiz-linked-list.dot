@@ -1,0 +1,12 @@
+digraph ll {
+  node [shape=record];
+  rankdir=LR;
+  edge [tailclip=false];
+  l1 [label="{<h> cat |<t>}"];
+  l2 [label="{<h> bat |<t>}"];
+  l3 [label="{<h> rat |<t>}"];
+  null[shape=diamond];
+  l1:t:c -> l2:h [ arrowtail=dot, arrowhead=vee, dir=both ];
+  l2:t:c -> l3:h [ arrowtail=dot, arrowhead=vee, dir=both];
+  l3:t:c -> null:w [arrowtail=dot, arrowhead=vee, dir=both];
+}
