@@ -1,0 +1,18 @@
+digraph ll {
+  node [shape=record];
+  rankdir=LR;
+  l1 [label="<h>|<t>"];
+  l2 [label="<h>|<t>"];
+  l3 [label="<h>|<t>"];
+  cat[shape=box];
+  bat[shape=box];
+  rat[shape=box];
+  null[shape=diamond];
+  l1:h -> cat;
+  l2:h -> bat;
+  l3:h -> rat;
+  l1:t -> l2:h;
+  l2:t -> l3:h;
+  l3:t -> null;
+  { rank = same; l1 l2 l3 null };
+}
