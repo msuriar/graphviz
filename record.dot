@@ -1,0 +1,5 @@
+digraph g {
+  node [shape=Mrecord];
+  node0 [ label =
+  "<f0>foo|<f1>bar|{<f2>baz|<f3>bleh|<f4>barf}|<f6>argle|<f7>bargle" ];
+}
