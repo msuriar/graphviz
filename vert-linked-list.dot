@@ -13,6 +13,6 @@ digraph ll {
   l3:h -> rat;
   l1:t -> l2:h;
   l2:t -> l3:h;
-  l3:t -> null;
+  l3:t -> null:n;
   { rank = same; l1 l2 l3 null };
 }
